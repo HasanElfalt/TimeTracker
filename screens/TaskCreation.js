@@ -25,11 +25,9 @@ function TaskCreation() {
   }
   function OnSubmitStartTime(startDateTime) {
     setSelectedStartTime(startDateTime);
-    console.log('start time fired');
   }
   function OnSubmitStoptTime(stopDateTime) {
     setSelectedStoptTime(stopDateTime);
-    console.log('stop time fired');
   }
 
   function newTask() {

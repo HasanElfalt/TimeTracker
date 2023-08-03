@@ -53,7 +53,6 @@ function AuthForm({
       password: enteredPassword,
       confirmPassword: enteredConfirmPassword,
     });
-    //console.log(enteredEmail);
   }
   return (
     <View>

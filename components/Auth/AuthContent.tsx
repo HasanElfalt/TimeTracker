@@ -39,10 +39,6 @@ function AuthContent({isLogin}: {isLogin: string}): JSX.Element {
     const passwordsAreEqual = password === confirmPassword;
 
     if (!emailIsValid || !passwordIsValid || (!isLogin && !passwordsAreEqual)) {
-      /*console.log(!emailIsValid);
-      console.log(!passwordIsValid);
-      console.log(!isLogin);*/
-
       Alert.alert('Invalid input', 'Please check your entered credentials.');
       setCredentialsInvalid({
         email: !emailIsValid,

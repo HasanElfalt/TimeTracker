@@ -7,7 +7,6 @@ const TimePicker = ({label, OnSubmitStartTime, OnSubmitStopTime}) => {
 
   const showTimePicker = () => {
     setTimePickerVisibility(true);
-    console.log('show timePicker');
   };
 
   const hideTimePicker = () => {
@@ -15,7 +14,6 @@ const TimePicker = ({label, OnSubmitStartTime, OnSubmitStopTime}) => {
   };
 
   const handleConfirm = time => {
-    console.log(time);
     hideTimePicker();
 
     if (label == 'Task start time') {
@@ -34,12 +32,10 @@ const TimePicker = ({label, OnSubmitStartTime, OnSubmitStopTime}) => {
       hideTimePicker();
     } else if (type == 'set') {
       handleConfirm(timestamp);
-      /*console.log("event");
-      console.log(event);*/
     }
   };
   return (
-    <View style={{marginBottom:12}}>
+    <View style={{marginBottom: 12}}>
       <Button title={label} onPress={showTimePicker} />
       {isTimePickerVisible && (
         <DateTimePicker

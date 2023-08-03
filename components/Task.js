@@ -1,8 +1,6 @@
 import {View, Text, StyleSheet, Button} from 'react-native';
 import {Colors} from '../constants/style';
 const Task = ({taskName, taskDesc, elapsedTime, deleteTask}) => {
-  //console.log('sddddddddddddddddddddddd');
-
   function handleDelete() {
     deleteTask();
   }

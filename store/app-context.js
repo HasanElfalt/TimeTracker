@@ -16,10 +16,8 @@ function AppContextProvider({children}) {
   function addTask(taskName, taskDesc, startTaskTime, stopTaskTime) {
     let id = uuid.v4();
     let elapsedTime = stopTaskTime - startTaskTime;
-    console.log(elapsedTime);
 
     setTasks([...tasks, {id, taskName, taskDesc, elapsedTime}]);
-    console.log(tasks);
   }
 
   function deleteTask(id) {
